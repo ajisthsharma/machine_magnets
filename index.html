@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Machine Magnet | NIET</title>
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<meta name="description" content="Machine Magnet, the AI & ML technical innovation club of NIET: events, hall of fame, projects and team.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,600&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/effects.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i><canvas id="fx"></canvas></div>
+<div id="bar"></div>
+<header class="hd"><a class="brand" href="#home"><span class="logo" aria-hidden="true"></span><b>Machine Magnet</b></a><nav id="nav" aria-label="Primary"></nav></header>
+<main>
+<!-- HOME -->
+<section class="pg" id="home"><div class="hero">
+  <div class="blob" data-s="-.1" style="width:480px;height:480px;right:-120px;top:-60px;background:rgba(193,39,45,.38)"></div>
+  <div class="blob" data-s=".08" style="width:260px;height:260px;left:5%;bottom:4%;background:rgba(216,179,106,.14)"></div>
+  <div class="wrap">
+    <div>
+      <p class="q rv">“Attracted to Innovation, Wired for Impact.”</p>
+      <h1 class="rt" data-t="Machine Magnet"></h1>
+      <p class="lead rv" style="--d:300ms">NIET’s technical innovation club for builders, engineers and problem-solvers. Build. Learn. Innovate.</p>
+      <div class="acts rv" style="--d:420ms"><a class="btn" href="#events">Upcoming events</a><a class="btn g" href="#about">Our story</a></div>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="scene rv magnet-scene" id="scene" style="--d:300ms"><canvas id="magnetLogo" role="img" aria-label="Interactive chrome horseshoe magnet. Move the pointer to tilt it; click or tap to pulse."></canvas></div>
+  </div></div>
+  <div class="sec"><div class="wrap"><div class="row"><div><p class="kick">What we do</p><h2 class="h2 rt" data-t="Our focus areas"></h2></div><a class="more" href="#about">Explore all →</a></div><div class="g4" id="focus"></div></div></div>
+  <div class="sec"><div class="wrap"><div class="row"><div><p class="kick">Next up</p><h2 class="h2 rt" data-t="Upcoming events"></h2></div><a class="more" href="#events">View all events →</a></div><div class="g3 evs"></div></div></div>
+</section>
+<!-- ABOUT -->
+<section class="pg" id="about">
+  <div class="sec"><div class="blob" data-s=".08" style="width:420px;height:420px;left:-120px;top:5%;background:rgba(193,39,45,.2)"></div>
+  <div class="wrap"><p class="kick">About</p><h1 class="h2 rt" data-t="Our story"></h1>
+    <div class="story rv"><div><p>Machine Magnet is NIET’s technical innovation club for builders, engineers and problem-solvers, founded in September 2024.</p><p>Draft copy: tell the story of how the club began, who started it and the first thing you built together.</p></div>
+    <div class="glass card"><p class="meta">Philosophy</p><h3>Learn. Build. Collaborate. Make an impact.</h3><p>Draft copy: explain how the four focus areas shape everything the club does.</p></div></div></div></div>
+  <div class="sec"><div class="wrap"><h2 class="h2 rt" data-t="Why Machine Magnet"></h2><p class="sub">Draft copy, replace with your own reasons.</p>
+    <div class="g3"><div class="glass card rv"><h3>Hands-on learning</h3><p>Placeholder: workshops and projects over lectures.</p></div><div class="glass card rv" style="--d:120ms"><h3>A real community</h3><p>Placeholder: peers, seniors and mentors in one place.</p></div><div class="glass card rv" style="--d:240ms"><h3>Visible impact</h3><p>Placeholder: hackathons, showcases and recognition.</p></div></div></div></div>
+  <div class="stair" id="fac"></div>
+  <div class="stair rev" id="core"></div>
+</section>
+<!-- HALL OF FAME -->
+<section class="pg" id="hall-of-fame">
+  <div class="sec"><div class="blob" data-s="-.08" style="width:440px;height:440px;right:-100px;top:0;background:rgba(193,39,45,.25)"></div><div class="wrap">
+    <p class="kick">Hall of Fame</p><h1 class="h2 rt" data-t="Champions and winners"></h1><p class="sub">Hackathon and event winners, and achievements of our core team.</p><div class="g3" id="champs"></div></div></div>
+  <div class="sec"><div class="wrap"><h2 class="h2 rt" data-t="Gallery"></h2><div class="fl" id="fl" role="group" aria-label="Filter gallery"></div><div class="gal" id="gal"></div></div></div>
+</section>
+<!-- EVENTS / PROJECTS / JOURNAL -->
+<section class="pg" id="events"><div class="sec"><div class="wrap"><p class="kick">Events</p><h1 class="h2 rt" data-t="Upcoming events"></h1><div class="g3 evs"></div></div></div>
+<div class="wsec" id="tlw" aria-labelledby="tlh"><div class="stage"><div class="wrap head"><h2 class="h2" id="tlh">Timeline</h2><p>Keep scrolling to turn the wheel.</p></div><div class="wheel" id="wheel" aria-hidden="true"></div><div class="cap" id="cap" aria-hidden="true"><p class="y" id="cy"></p><p class="tt" id="ct"></p><p class="dd" id="cd"></p></div></div><ol class="tlf sr" id="tlf"></ol></div></section>
+<section class="pg" id="projects"><div class="sec"><div class="wrap"><p class="kick">Projects</p><h1 class="h2 rt" data-t="Project showcase"></h1><p class="sub">Placeholder projects. Replace with real ones.</p><div class="gal pgal" id="pj"></div></div></div></section>
+<section class="pg" id="journal"><div class="sec"><div class="wrap"><p class="kick">Journal</p><h1 class="h2 rt" data-t="Club journal"></h1><p class="sub">Placeholder posts. Replace with real articles.</p><div class="g3" id="jn"></div></div></div></section>
+</main>
+<footer class="ft"><div class="wrap"><div class="cols">
+  <div><a class="brand" href="#home"><span class="logo" aria-hidden="true"></span>Machine Magnet</a><p style="margin-top:14px">NIET’s technical innovation club for builders, engineers and problem-solvers.</p></div>
+  <div><h4>Quick links</h4><ul id="fl2"></ul></div>
+  <div><h4>Follow us</h4><div class="soc" id="soc"></div></div>
+  <div><h4>Community</h4><p>Placeholder community text. Join the conversation with fellow builders.</p><a class="btn" href="https://chat.whatsapp.com/F6PwUIO6qU3EFi1HGbCBus" target="_blank" rel="noopener noreferrer">Join the Club</a></div>
+</div><p class="cp">© 2026 Machine Magnet, NIET. Sample content throughout: replace names, dates, links and figures before launch.</p></div></footer>
+<dialog id="pm" class="pm" aria-labelledby="pmt"><button class="pmx" id="pmx" type="button" aria-label="Close project">✕</button>
+<div class="pm-top"><div class="pm-l"><h3 id="pmt"></h3><p class="meta">Overview</p><p id="pmo"></p></div><aside class="pm-r"><div class="ph"><i></i></div><b id="pma"></b><a id="pml" href="#" target="_blank" rel="noopener noreferrer"><em>in</em>LinkedIn</a><a id="pmg" href="#" target="_blank" rel="noopener noreferrer"><em>gh</em>GitHub</a></aside></div>
+<div class="deck" id="deck" aria-label="Project detail cards"></div></dialog>
+<dialog id="rg"><h3>Register</h3><p class="meta" id="rgt"></p><form id="rf"><label for="rn">Name</label><input id="rn" required><label for="re">Email</label><input id="re" type="email" required><div class="acts"><button class="btn" type="submit">Submit</button><button class="btn g" type="button" id="rc">Close</button></div><p class="meta" id="rok" hidden>Thanks! This sample form runs in your browser only and is not sent anywhere.</p></form></dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/effects.js"></script>
+<script src="assets/js/magnet-logo.js"></script>
+<script src="assets/js/timeline.js"></script>
+<script src="assets/js/projects.js"></script>
+</body>
+</html>
