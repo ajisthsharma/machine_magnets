@@ -41,7 +41,12 @@ $("rc").onclick=function(){dg.close()};$("rf").onsubmit=function(e){e.preventDef
 document.addEventListener("pointermove",function(e){var g=e.target.closest&&e.target.closest(".glass");if(g){var r=g.getBoundingClientRect();g.style.setProperty("--mx",e.clientX-r.left+"px");g.style.setProperty("--my",e.clientY-r.top+"px")}
  if(!RM){var s=$("scene");if(s&&s.offsetParent){var o=s.firstChild,r2=s.getBoundingClientRect();o.style.setProperty("--ry",((e.clientX-r2.left)/r2.width-.5)*50+"deg");o.style.setProperty("--rx",-((e.clientY-r2.top)/r2.height-.5)*40+"deg")}}},{passive:true});
 /* person card (Techkriti-style: photo, hover socials, role, NAME, phone) */
-function card(n,r){return '<div class="ph"><i></i><span class="sc"><a href="'+SOCIAL[1][2]+'" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a><a href="'+SOCIAL[0][2]+'" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a></span></div><div class="inf"><span class="rl">'+esc(r)+'</span><b>'+esc(n)+'</b><em>+91 XXXXX XXXXX</em></div>'}
+function card(n,r){var S='<svg viewBox="0 0 24 24" aria-hidden="true">',E='</svg>',
+ IG=S+'<rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/>'+E,
+ PH=S+'<path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1z"/>'+E,
+ ML=S+'<rect x="2.5" y="5" width="19" height="14" rx="2" fill="currentColor"/><path d="M3.5 7.5 12 13l8.5-5.5" fill="none" stroke="#1a1016" stroke-width="1.8"/>'+E,
+ LI=S+'<rect x="3" y="3" width="18" height="18" rx="3" fill="currentColor"/><path d="M7.5 10.5V17M7.5 7.3v.1M11.5 17v-6.5m0 3c0-2 1.4-3 3-3s2.5 1.2 2.5 3V17" fill="none" stroke="#1a1016" stroke-width="2"/>'+E;
+ return '<div class="cd"><div class="pnl c-soc"><a href="'+SOCIAL[1][2]+'" target="_blank" rel="noopener noreferrer" aria-label="Instagram">'+IG+'</a><span class="ic" aria-hidden="true">'+PH+'</span><span class="ic" aria-hidden="true">'+ML+'</span><a href="'+SOCIAL[0][2]+'" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">'+LI+'</a></div><div class="pnl c-photo"></div><div class="pnl c-role"><b>'+esc(r)+'</b></div><div class="pnl c-name"><s></s><div><b>'+esc(n)+'</b><em>+91 XXXXX XXXXX</em></div></div></div>'}
 /* staircase */
 var STAIRS=[],MOB=matchMedia("(max-width:800px)");
 function stair(id,items,o){var el=$(id),N=items.length;
