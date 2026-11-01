@@ -5,8 +5,8 @@ Static site for NIET's Machine Magnet club (HTML, CSS, vanilla JS). No build ste
 ## Structure
 ```
 index.html              all pages, hash-routed (#home #about #hall-of-fame #events #projects #journal)
-assets/css/             main.css (layout/base), effects.css (background, hover, cards, popup, timeline)
-assets/js/              main.js (content + router + staircases), effects.js, timeline.js, projects.js
+assets/css/             main.css (layout/base), effects.css (background, hover, popup, timeline), theme.css (person cards, light/dark theme)
+assets/js/              main.js (content + router + staircases), effects.js (particles, cursor, theme toggle), magnet-logo.js (3D hero magnet), timeline.js, projects.js
 assets/img/favicon.svg
 netlify.toml            Netlify config (publish = ".")
 vercel.json             Vercel config (outputDirectory = ".")
